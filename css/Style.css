@@ -1,0 +1,301 @@
+﻿body, html {
+    height: 100%;
+    margin: 0;
+}
+
+/* Hovedmeny fast-øverst */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+li {
+    float: left;
+}
+
+li.lang {
+    display: inline-block;
+    float: right;
+}
+
+img.flag {
+    width: auto;
+    height: 20px;   
+}
+
+img.icon {
+    float: left;
+    display: inline-block;
+    height: 30px;
+    width: auto;
+    padding: 10px;
+}
+
+li a {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    padding: 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Overtekst på hjem-skjermen */
+div.outer {
+    width: 100%;
+    float: left;
+}
+
+header {
+    width: 70%;
+    text-align: center;
+    margin: 10% auto auto auto;
+    padding: 5%;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 30px Highlight;
+    border: 1px solid Highlight;
+}
+
+header h1 {
+	margin-top: -16px;
+	font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 7em;
+	color: white;
+    text-shadow: 0px 0px 30px Highlight;
+}
+
+header h2 {
+    margin-top: -75px;
+	font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	text-align: center;
+    font-size: 2em;
+	color: white;
+    text-shadow: 0px 0px 30px Highlight;
+}
+
+img.arrow {
+    height: 8%;
+    width: auto;
+    background-color: black;
+    border-radius: 100px;
+    box-shadow: 0px 0px 30px Highlight;
+    border: 1px solid Highlight;
+    display: block;
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+
+}
+
+/* Bakgrunnsbilde med parallax-effekt */
+div.parallax {
+    background-image: url("../img/TogHD.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: transparent;
+}
+
+/* Hovedside */
+div.main {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+p.text {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5%;
+    margin-top: 1%;
+    text-align: left;
+}
+
+hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-style: inset;
+    border-width: 1px;
+}
+
+#about {
+    padding-top: 50px;
+}
+
+img.Smartphone {
+    float:left;
+    padding: 2%;
+}
+
+img.download {
+    width: 30%;
+    height: auto;
+}
+
+/* Footer */
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 100%;
+    position: relative;
+    float: left;
+    height: auto;
+    padding: 10px 0px 10px 0px;
+}
+
+/* Et noe responsivt design */
+@media screen and (max-width: 600px) {
+
+    div.parallax {
+        background-image: url("../img/TogHD.jpg");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: none;
+    }
+
+    header {
+        width: 70%;
+        text-align: center;
+        margin: 30% auto auto auto;
+        padding: 5%;
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px Highlight;
+        border: 1px solid Highlight;
+    }
+
+    header h1 {
+	    margin-top: 0px;
+	    font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	    text-align: center;
+	    font-size: 5em;
+	    color: white;
+        text-shadow: 0px 0px 30px Highlight;
+    }
+
+    header h2 {
+        margin-top: -50px;
+	    font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	    text-align: center;
+        font-size: 1.3em;
+	    color: white;
+        text-shadow: 0px 0px 30px Highlight;
+    }
+
+    img.download {
+        width: 75%;
+        height: auto;
+    }
+
+    img.Smartphone {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    header {
+        margin: 50% auto auto auto;
+    }
+    
+    header h1 {
+	    font-size: 3em;
+    }
+
+    header h2 {
+        margin-top: -30px;
+        font-size: 1em;
+    }
+     
+    #about {
+        padding-top: 100px;
+    }
+    
+    #download {
+        padding-top: 100px;
+    }
+}
+
+/* Tilpasset Smartphone display */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
+
+    div.parallax {
+        background-image: url("../img/TogHD.jpg");
+        height: 100%;
+        width: 100%;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-color: none;
+    }
+
+    header {
+        width: 70%;
+        text-align: center;
+        margin: 50% auto auto auto;
+        padding: 5%;
+        background-color: black;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px Highlight;
+        border: 1px solid Highlight;
+    }
+
+    header h1 {
+	    margin-top: 0px;
+	    font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	    text-align: center;
+	    font-size: 4.4em;
+	    color: white;
+        text-shadow: 0px 0px 30px Highlight;
+    }
+
+    header h2 {
+        margin-top: -40px;
+	    font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	    text-align: center;
+        font-size: 1.2em;
+	    color: white;
+        text-shadow: 0px 0px 30px Highlight;
+    }
+
+    img.download {
+        width: 75%;
+        height: auto;
+    }
+
+    img.Smartphone {
+        display: none;
+    }
+
+    #about {
+        padding-top: 100px;
+    }
+}

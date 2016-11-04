@@ -59,9 +59,9 @@ div.outer {
 }
 
 header {
-    width: 70%;
+    width: 60%;
     text-align: center;
-    margin: 10% auto auto auto;
+    margin: 9% auto auto auto;
     padding: 5%;
     background-color: black;
     border-radius: 10px;
@@ -73,7 +73,7 @@ header h1 {
 	margin-top: -16px;
 	font-family: "Sansita One", Arial, Helvetica, sans-serif;
 	text-align: center;
-	font-size: 7em;
+	font-size: 6em;
 	color: white;
     text-shadow: 0px 0px 30px Highlight;
 }
@@ -195,7 +195,7 @@ footer {
 	    margin-top: 0px;
 	    font-family: "Sansita One", Arial, Helvetica, sans-serif;
 	    text-align: center;
-	    font-size: 5em;
+	    font-size: 3.6em;
 	    color: white;
         text-shadow: 0px 0px 30px Highlight;
     }
@@ -226,7 +226,7 @@ footer {
     }
     
     header h1 {
-	    font-size: 3em;
+	    font-size: 2em;
     }
 
     header h2 {
@@ -272,7 +272,7 @@ footer {
 	    margin-top: 0px;
 	    font-family: "Sansita One", Arial, Helvetica, sans-serif;
 	    text-align: center;
-	    font-size: 4.4em;
+	    font-size: 3.6em;
 	    color: white;
         text-shadow: 0px 0px 30px Highlight;
     }

@@ -1,4 +1,4 @@
-﻿body, html {
+body, html {
     height: 100%;
     margin: 0;
 }
@@ -61,8 +61,8 @@ div.outer {
 header {
     width: 60%;
     text-align: center;
-    margin: 9% auto auto auto;
-    padding: 5%;
+    margin: 10% auto auto auto;
+    padding: 2%;
     background-color: black;
     border-radius: 10px;
     box-shadow: 0px 0px 30px Highlight;
@@ -71,16 +71,16 @@ header {
 
 header h1 {
 	margin-top: -16px;
-	font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	font-family: 'Pacifico', Arial, Helvetica, sans-serif;
 	text-align: center;
-	font-size: 6em;
+	font-size: 5.4em;
 	color: white;
     text-shadow: 0px 0px 30px Highlight;
 }
 
 header h2 {
     margin-top: -75px;
-	font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	font-family: 'Pacifico', Arial, Helvetica, sans-serif;
 	text-align: center;
     font-size: 2em;
 	color: white;
@@ -122,6 +122,16 @@ div.main {
     height: auto;
 }
 
+details {
+    float: left;
+    outline: none;
+}
+
+summary {
+    float: left;
+    outline: none;
+}
+
 p.text {
     font-family: Arial, Helvetica, sans-serif;
     padding: 5%;
@@ -139,13 +149,17 @@ hr {
     border-width: 1px;
 }
 
+#who {
+    padding-top: 50px;
+}
+
 #about {
     padding-top: 50px;
 }
 
 img.Smartphone {
     float:left;
-    padding: 2%;
+    padding: 5%;
 }
 
 img.download {
@@ -193,7 +207,7 @@ footer {
 
     header h1 {
 	    margin-top: 0px;
-	    font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
 	    text-align: center;
 	    font-size: 3.6em;
 	    color: white;
@@ -202,7 +216,7 @@ footer {
 
     header h2 {
         margin-top: -50px;
-	    font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
 	    text-align: center;
         font-size: 1.3em;
 	    color: white;
@@ -234,6 +248,10 @@ footer {
         font-size: 1em;
     }
      
+    #who {
+        padding-top: 100px;
+    }
+
     #about {
         padding-top: 100px;
     }
@@ -270,7 +288,7 @@ footer {
 
     header h1 {
 	    margin-top: 0px;
-	    font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
 	    text-align: center;
 	    font-size: 3.6em;
 	    color: white;
@@ -279,7 +297,7 @@ footer {
 
     header h2 {
         margin-top: -40px;
-	    font-family: "Sansita One", Arial, Helvetica, sans-serif;
+	    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
 	    text-align: center;
         font-size: 1.2em;
 	    color: white;
@@ -295,7 +313,7 @@ footer {
         display: none;
     }
 
-    #about {
+    #who {
         padding-top: 100px;
     }
 }

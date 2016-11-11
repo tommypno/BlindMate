@@ -116,26 +116,48 @@ div.parallax {
 /* Hovedside */
 div.main {
     font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+div.download {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     display: inline-block;
     width: 100%;
     height: auto;
 }
 
+h1 {
+    text-align: left;
+}
+
+h2 {
+    text-align: left;
+}
+
 details {
-    float: left;
-    outline: none;
+    border-radius: 5px;
+    background: #EEE;
+    margin: 2% auto auto auto;
+    padding: 8%;
+    
 }
 
 summary {
-    float: left;
+    background: #333;
+    color: #FFF;
+    border-radius: 5px;
+    padding: 5px 10px;
     outline: none;
 }
 
 p.text {
     font-family: Arial, Helvetica, sans-serif;
     padding: 5%;
-    margin-top: 1%;
+    margin: 1% auto auto auto;
     text-align: left;
 }
 

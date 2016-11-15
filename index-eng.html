@@ -1,98 +1,136 @@
-<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>BlindMate</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <link type="text/css" rel="stylesheet" href="css/Style.css" />
-<<<<<<< HEAD
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
-=======
-    
->>>>>>> origin/master
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="ISO-8859-1">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
-<body id="home">
 
-    <!-- Main menu fixed on top -->
-    <ul>
-        <li><img class="icon" src="img/smartphone-icon.png" alt="myATM" /></li>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#who">Who is it for</a></li>
-        <li><a href="#about">About product</a></li>
-        <li><a href="#download">Download</a></li>
-        <li class="lang"><a href="index-eng.html"><img class="flag" src="img/flag-en.png" alt="English" /></a></li>
-        <li class="lang"><a href="index.html"><img class="flag" src="img/flag-no.png" alt="Norwegin" /></a></li>
-    </ul>
+<body>
+    <div id="Home">
+        <button>
+            <div id="button">
+                <p href="#" id="p-menu">Menu</p>
+            </div>
+            <div id="dropdown-content">
+                <ul>
+                    <li><a href="#Home" tabindex="1">Home</a></li>
+                    <li><a href="#About" tabindex="2">BlindMate</a></li>
+                    <li><a href="#Problem" tabindex="3">Problem</a></li>
+                    <li><a href="#Features" tabindex="4">Features</a></li>
+                    <li><a href="#Download" tabindex="5">Download</a></li>
+                </ul>
+                <a href="index-eng.html" tabindex="6"><img src="img/flag-en.png" class="flag" id="england-flag" alt="English" /></a>
+                <a href="index.html" tabindex="7"><img src="img/flag-no.png" class="flag" id="norge-flag" alt="Norwegian"/></a>
+            </div>
+          </button>
 
-    <!-- Header on first screen -->
-    <div class="outer">
         <header>
-            <h1>Blindmate</h1>
-            <h2>Your best travel partner!</h2>
+            <div id="Header-container">
+                <h1 id="h1header">BlindMate</h1>
+                <h3 id="h3header">Your best travel partner!</h3>
+            </div>
+            <a href="#About"><img src="img/arrow.png" id="Arrow-down" alt="Scroll down"/></a>
         </header>
-    </div>
 
-    <!-- Arrow scroll down -->
-    <div class="arrow">
-        <a href="#about"><img class="arrow" src="img/arrow.png" alt="Scroll down" /></a>
-    </div>
-
-    <!-- Background with parallax-effect -->
-    <div class="parallax"></div>
-
-    <!-- About the product. -->
-    <div id="about" class="main">
-        <img class="Smartphone" src="img/smartphone.png" alt="Smartphone" />
-        <h1>Who uses BlindMate?</h1>
-        <h2>This app is designed for the blind, and visually impared people. But everyone can use it.</h2>
-        <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <article class="grey" id="About">
+            <!--<img class="Smartphone-right" src="img/smartphone.png" alt="Smartphone" />-->
+            <h3>About BlindMate</h3>
+            <p>BlindMate is an integrated aid, specially designed for visually impaired and totally blind who wish to travel by public transportation. BlindMate aim to supply a fully integrated solution that is capable of assisting the user from their current location to the correct stop, during the journey and from the correct stop to the final destination. With the help of the voice assistant that utilizes real time information from the local public transportation system, the user is continually kept up-to-date about delays and deviations before and during the journey.</p>
+            <div>
+                <a id="hide1" href="#hide1" class="hide">Click here to read about our vision..</a>
+                <a id="show1" href="#show1" class="show">Click here to hide our vision..</a>
+                <div class="details">
+                    <br />
+                    <h3>Our vision</h3>
+                    <p>Our goal through providing a solution in the form of a tool for blind and visually impaired is to make already available transportation solutions more available to a larger group of people. Our long-term goal is conceptualized through a vision about equal opportunities for everyone. The solution utilizes technology which is widespread and well developed. By utilizing technology implemented in smartphones, already available to a large share of the population it is possible to make a solution quickly available to many users. A desirable part of the goal is to make the usage of public transportation as seamless as possible. BlindMate therefore strives to develop a solution that assists the user from start to stop.</p>
+                    <p>With rapid technological development, the share of the population using available technology increases. Statistics provided by Statistics Norway shows that the share of smartphone ownership in the age range of 9-79 years has increased rapidly over the last years. In 2012 the share was 57%, while it had increased to 85% in 2015. (<a target="_blank" href="http://medienorge.uib.no/statistikk/medium/ikt/388">http://medienorge.uib.no/statistikk/medium/ikt/388</a>). With the high share of smartphone usage there exists a large potential for benefit with low cost for users. This makes the execution of a solution cost effective and therefore more accessible to a greater number of users. To facilitate for blind and partially sighted has BlindMate implemented several extra functions and implemented usage of both map information and Ruter's real-time information in BlindMate's functions.</p>
+                </div>
+            </div>
             <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-    </div>
-    
-    <hr />
+        </article>
 
-    <!-- Who uses the product. -->
-    <div id="who" class="main">
-        <!--<img class="Smartphone" src="img/smartphone-en.png" alt="Smartphone" />-->
-        <h1>What is BlindMate?</h1>
-        <h2>BlindMate is a complete travel solution.</h2>
-        <p class="text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <article class="white" id="Problem">
+            <!--<img class="Smartphone-left" src="img/smartphone.png" alt="Smartphone" />-->
+            <h3>About the problem</h3>
+            <p>Blind and visually impaired who wish to travel by public transportation may experience it as a challenge. The challenge is often a sum of several sub-problems that occur during the journey.</p>
+            <div>
+                <a id="hide2" href="#hide2" class="hide">Click here to read more about the problem..</a>
+                <a id="show2" href="#show2" class="show">Click here to hide more about the problem..</a>
+                <div class="details">
+                    <br />
+                    <h3>More about the problem</h3>
+                     <p>One of the problems in public transportation in Norway, is that it is not fully accessible for totally blind or visually impaired. To travel with public transportation can be a struggle, which lead them to use the system less. This is unfortunate because the public transportation system in Oslo is well-developed. Blind and visually impaired might use this system less frequently than desired because of the challenge of using it, which leads to inequality. The most obvious problems when traveling with public transportation, are for example:</p>
+                    <ul>
+                        <li>Finding the stop</li>
+                        <li>Locating the correct departure</li>
+                        <li>Transfers during the journey</li>
+                        <li>Information during the journey</li>
+                        <li>Lack of information regarding remaining travel time and clear information about remaining time to the destination</li>
+                    </ul>
+                    <p>According to Norges blindeforbund (official organization for blindness and eye diseases in Norway) there are approximately 180 000 totally blind and visually impaired in Norway (<a target="_blank" href="https://www.blindeforbundet.no/oyehelse-og-synshemninger/fakta-og-statistikk-om-synshemninger">https://www.blindeforbundet.no/oyehelse-og-synshemninger/fakta-og-statistikk-om-synshemninger</a>). In order to gain a more detailed understanding of the challenge and the real-world experience there was conducted an informal survey with the help of Norges blindeforbund.</p>
+                    <p>The most common problems related to public transportation are to get on the correct bus/tram/train and transfer between them. The survey shows that 70% of the participants would like to travel more with public transportation if the solution was launched. 94% of the participants use public transportation a couple of times per month or per week. This shows that there are a big potential user group for BlindMate.</p>
+                </div>
+            </div>
             <br /><br />
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+         </article>
+
+        <article class="grey" id="Features">
+            <h3>Features</h3>
+            <br />
+            <div class="Features-left" id="Voice">
+                <a href="features-eng.html#Voice"><img src="img/mic.png" class="feature-logo" alt="Voice controll" /></a>
+                <h4 class="feature-heading">Voice controll</h4>
+                <p class="feature-p">In order to optimize the input process, it is possible to set voice control through a voice control assistant as the default input method when opening the application for the first time. With voice control activated, the travel suggestions which is optimized for blind and visually impaired, could be announced and explained by the voice control assistant.</p>
+                <a href="features-eng.html#Voice">Read more about voice controll</a>
+            </div>
+            <div class="Features-right" id="Guide">
+                <a href="features-eng.html#Guide"><img src="img/man.png" class="feature-logo" alt="Guidance to stops" /></a>
+                <h4 class="feature-heading">Guidance to stops</h4>
+                <p class="feature-p">After BlindMate has suggested a route to your destination, it will help you navigate from your current position or chosen start position, to the bus/train/tram stop. In order to supply optimized guidance and directions to the correct stop, BlindMate offers guidance both through the voice control assistant and through a navigation interface with high contrast maps.</p>
+                <a href="features-eng.html#Guide">Read more about guidance</a>
+            </div>
+        </article>
+
+        <article class="white">
+            <div class="Features-left" id="Find">
+                <a href="features-eng.html#Find"><img src="img/bell.png" class="feature-logo" alt="Finding the correct departure" /></a>
+                <h4 class="feature-heading">Finding the correct departure</h4>
+                <p class="feature-p">The integrated voice control assistant offers real-time guidance at the stop to locate the correct departure. The voice control assistant also keeps the user continually updated with live information concerning delays and deviations combined with departure-specific information such as when the correct departure is ready for boarding.</p>
+                <a href="features-eng.html#Find">Read more about departures</a>
+            </div>
+            <div class="Features-right" id="Assist">
+                <a href="features-eng.html#Assist"><img src="img/speaker.png" class="feature-logo" alt="Assistance during the journey" /></a>
+                <h4 class="feature-heading">Assistance during the journey</h4>
+                <p class="feature-p">The voice control assistant is available during the entire journey. The voice control assistant provides on-demand information such as estimated travel time and time remaining to destination by either clicking the icon or requesting update by voice. In the case that you would need to transfer during your journey, you will receive the necessary information about the transfer from the voice control assistant. All information provided will also be shown on the screen for the partially sighted.</p>
+                <a href="features-eng.html#Assist">Read more about assistance</a>
+            </div>
+        </article>
+
+        <article class="grey">
+            <div class="Features-more" id="Road">
+                <a href="features-eng.html#Road"><img src="img/bus.png" class="feature-logo" alt="The road ahead" /></a>
+                <h4 class="feature-heading">The road ahead</h4>
+                <p class="feature-p">BlindMate aspires to be a learning organization in order to contribute to social innovation. By integrating some of the best already existing solutions in the market and optimizing them for blind and partially sighted you minimize the time to market. By integrating the already developed solutions you secure both shot development time and maximize usage of available software.</p>
+                <a href="features-eng.html#Road">Read more about the road ahead</a>
+            </div>
+        </article>
+
+        <article class="white">
+            <h3>Download BlindMate</h3>
+            <br />
+            <div class="Features-left" id="Android">
+                <a target="_blank" href="https://play.google.com/store/apps/collection/topselling_free"><img src="img/android.png" class="download-logo" alt="Download for Android" /></a>
+            </div>
+            <div class="Features-right" id="iOS">
+                <a target="_blank" href="http://www.apple.com/itunes/charts/free-apps/"><img src="img/ios.png" class="download-logo" alt="Download for iPhone" /></a>
+            </div>
+        </article>
+
+        <footer id="Download">
+            <p class="footer">Copyright &copy;2016 OsloDev ASA. All rights reserved.</p>
+            <p class="footer">Created by OsloDev ASA.</p>
+        </footer>
     </div>
-    
-    <hr />
-
-    <!-- Download -->
-    <div id="download" class="main">
-        <h1>Download BlindMate here.</h1>
-        <h2>Use the links below to download your version of BlindMate now.</h2>
-        <p><br /></p>
-        <a href="https://play.google.com/store/apps/collection/topselling_free"><img class="download" src="img/android.png" alt="Download for Android" /></a>
-        <a href="http://www.apple.com/itunes/charts/free-apps/"><img class="download" src="img/ios.png" alt="Download for iOS" /></a>
-        <p><br /></p>
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-        <p class="footer">Copyright &copy;2016 Tommy Pedersen. All rights reserved.</p>
-    </footer>
-
 </body>
 </html>

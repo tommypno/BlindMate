@@ -1,212 +1,300 @@
-body, html {
-    height: 100%;
-    margin: 0;
+body {
+    margin: 0 0;
+    padding: 0 0;
+    background-color: #EBEBEB;
+    font-size: 1.2em;
+    color: #303234;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 
-/* Hovedmeny fast-øverst */
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: black;
-    position: fixed;
-    top: 0;
+#Home {
     width: 100%;
-    z-index: 9999;
-}
-
-li {
-    float: left;
-}
-
-li.lang {
-    display: inline-block;
-    float: right;
-}
-
-img.flag {
-    width: auto;
-    height: 20px;   
-}
-
-img.icon {
-    float: left;
-    display: inline-block;
-    height: 30px;
-    width: auto;
-    padding: 10px;
-}
-
-li a {
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline-block;
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-}
-
-li a:hover {
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-}
-
-/* Overtekst på hjem-skjermen */
-div.outer {
-    width: 100%;
-    float: left;
 }
 
 header {
-    width: 60%;
+    background-image: url("../img/TogHD.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    margin: 0 0;
     text-align: center;
-    margin: 10% auto auto auto;
-    padding: 2%;
-    background-color: black;
+}
+
+header.no-img {
+    background-image: none;
+    height: 0;
+    margin: 0 0;
+    text-align: center;
+}
+
+#Header-container {
+    top: 150px;
+    width: 500px;
+    height: auto;
+    position: relative;
+    background-color: rgba(51, 51, 51, 0.9);
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 30px Highlight;
     border: 1px solid Highlight;
 }
 
-header h1 {
-	margin-top: -16px;
-	font-family: 'Pacifico', Arial, Helvetica, sans-serif;
-	text-align: center;
-	font-size: 5.4em;
-	color: white;
-    text-shadow: 0px 0px 30px Highlight;
+#h1header {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 4em;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0px 0px 5px Highlight;
 }
 
-header h2 {
-    margin-top: -75px;
-	font-family: 'Pacifico', Arial, Helvetica, sans-serif;
-	text-align: center;
-    font-size: 2em;
-	color: white;
-    text-shadow: 0px 0px 30px Highlight;
+#h3header {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1.8em;
+    color: white;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0px 0px 5px Highlight;
 }
 
-img.arrow {
-    height: 8%;
+.flag {
+    height: 25px;
     width: auto;
-    background-color: black;
+    float: right;
+    top: 10px;
+    position: relative;
+    margin-right: 1%;
+}
+
+#arrow-down {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.9);
     border-radius: 100px;
     box-shadow: 0px 0px 30px Highlight;
     border: 1px solid Highlight;
-    display: block;
-    position: absolute;
-    bottom: 2%;
+    bottom: 1%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-
 }
 
-/* Bakgrunnsbilde med parallax-effekt */
-div.parallax {
-    background-image: url("../img/TogHD.jpg");
-    height: 100%;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: transparent;
+h3 {
+    font-size: 1.8em;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-/* Hovedside */
-div.main {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    display: inline-block;
+#dropdown-content {
+    position: fixed;
     width: 100%;
     height: auto;
+    background-color: rgba(51, 51, 51, 0.9);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-div.download {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    display: inline-block;
+#button {
+    position: fixed;
     width: 100%;
     height: auto;
-}
-
-h1 {
-    text-align: left;
-}
-
-h2 {
-    text-align: left;
-}
-
-details {
-    border-radius: 5px;
-    background: #EEE;
-    margin: 2% auto auto auto;
-    padding: 8%;
-    
-}
-
-summary {
-    background: #333;
-    color: #FFF;
-    border-radius: 5px;
-    padding: 5px 10px;
-    outline: none;
-}
-
-p.text {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 5%;
-    margin: 1% auto auto auto;
-    text-align: left;
-}
-
-hr { 
-    display: block;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    margin-left: 2%;
-    margin-right: 2%;
-    border-style: inset;
-    border-width: 1px;
-}
-
-#who {
-    padding-top: 50px;
-}
-
-#about {
-    padding-top: 50px;
-}
-
-img.Smartphone {
-    float:left;
-    padding: 5%;
-}
-
-img.download {
-    width: 30%;
-    height: auto;
-}
-
-/* Footer */
-footer {
-    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgba(51, 51, 51, 0.9);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+    z-index: 1;
     text-align: center;
-    background-color: black;
+    display: none;
+}
+
+#p-menu {
     color: white;
+    font-size: 20px;
+    padding: 12px 25px;
+    text-decoration: none;
+    margin: 0;
+    text-align: center;
+    float: left;
+}
+
+button {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    z-index: 1;
+    border: none;
+}
+
+button ul {
+    margin: 0;
+    padding: 0;
+}
+
+button ul li {
+    float: left;
+    list-style-type: none;
+    margin: 0;
+}
+
+ul a {
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    padding: 12px 25px;
+    text-decoration: none;
+    margin: 0;
+    float: left;
+}
+
+ul a:hover {
+    background-color: white;
+    color: black;
+}
+
+ul a:focus {
+    background-color: white;
+    color: black;
+}
+
+button:hover li a {
+    display: block;
+}
+
+button:hover #button {
+    display: none;
+}
+
+#p-menu:hover li a {
+    display: block;
+}
+
+.white {
+    background-color: white;
+    position: relative;
+    float: left;
+    width: 76%;
+    height: auto;
+    padding: 4% 12%;
+    padding-bottom: 1%;
+}
+
+.grey {
+    background-color: #e6e6e6;
+    position: relative;
+    float: left;
+    width: 76%;
+    height: auto;
+    padding: 4% 12%;
+    padding-bottom: 1%;
+}
+
+img.Smartphone-left {
+    float: left;
+    padding: 3%;
+    height: 60%;
+    width: auto;
+}
+
+img.Smartphone-right {
+    float: right;
+    padding: 3%;
+    height: 60%;
+    width: auto;
+}
+
+.details, .show, .hide:target {
+    display: none;
+}
+
+.hide:target+.show, .hide:target~.details {
+    display: block;
+}
+
+.expando {
+  display: none;
+}
+
+.expando:target {
+  display: block;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 15px;
+}
+
+.Features-more {
+    height: auto;
+    padding: 2%;
+    position: relative;
+    text-align: center;
+}
+
+.Features-left {
+    width: 45%;
+    height: auto;
+    padding: 2%;
+    float: left;
+    position: relative;
+    text-align: center;
+}
+
+.Features-right {
+    width: 45%;
+    height: auto;
+    padding: 2%;
+    float: right;
+    position: relative;
+    text-align: center;
+}
+
+.feature-heading {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.feature-logo {
+    width: 100px;
+    margin: 0 auto;
+    height: auto;
+}
+
+.feature-p {
+    font-weight: normal;
+    font-size: 1em;
+    text-align: left;
+}
+
+.download-logo {
+    width: 75%;
+    margin: 0 auto;
+    height: auto;
+}
+
+footer {
+    text-align: center;
+    background-color: rgba(51, 51, 51, 0.9);
     width: 100%;
     position: relative;
     float: left;
     height: auto;
-    padding: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
-/* Et noe responsivt design */
-@media screen and (max-width: 600px) {
+p.footer {
+    font-family: Verdana;
+    font-size: 0.8em;
+    color: white;
+}
 
-    div.parallax {
-        background-image: url("../img/TogHD.jpg");
+@media only screen and (min-width: 150px) and (max-width: 750px) {
+    header {
+        background-image: url("../img/Tog.jpg");
         height: 100%;
         width: 100%;
         background-size: cover;
@@ -215,127 +303,78 @@ footer {
         background-repeat: no-repeat;
         background-color: none;
     }
-
-    header {
-        width: 70%;
-        text-align: center;
-        margin: 30% auto auto auto;
-        padding: 5%;
-        background-color: black;
-        border-radius: 10px;
-        box-shadow: 0px 0px 30px Highlight;
-        border: 1px solid Highlight;
+    #Header-container {
+        top: 100px;
+        padding: 10px;
+        width: 90%;
     }
-
-    header h1 {
-	    margin-top: 0px;
-	    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
-	    text-align: center;
-	    font-size: 3.6em;
-	    color: white;
-        text-shadow: 0px 0px 30px Highlight;
+    #h1header {
+        font-size: 3em;
     }
-
-    header h2 {
-        margin-top: -50px;
-	    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
-	    text-align: center;
-        font-size: 1.3em;
-	    color: white;
-        text-shadow: 0px 0px 30px Highlight;
+    #h3header {
+        font-size: 1.6em;
     }
-
-    img.download {
-        width: 75%;
-        height: auto;
-    }
-
-    img.Smartphone {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 400px) {
-
-    header {
-        margin: 50% auto auto auto;
-    }
-    
-    header h1 {
-	    font-size: 2em;
-    }
-
-    header h2 {
-        margin-top: -30px;
-        font-size: 1em;
-    }
-     
-    #who {
-        padding-top: 100px;
-    }
-
-    #about {
-        padding-top: 100px;
-    }
-    
-    #download {
-        padding-top: 100px;
-    }
-}
-
-/* Tilpasset Smartphone display */
-@media only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) {
-
-    div.parallax {
-        background-image: url("../img/TogHD.jpg");
-        height: 100%;
+    #button {
+        position: fixed;
         width: 100%;
-        background-size: cover;
-        background-attachment: scroll;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-color: none;
-    }
-
-    header {
-        width: 70%;
-        text-align: center;
-        margin: 50% auto auto auto;
-        padding: 5%;
-        background-color: black;
-        border-radius: 10px;
-        box-shadow: 0px 0px 30px Highlight;
-        border: 1px solid Highlight;
-    }
-
-    header h1 {
-	    margin-top: 0px;
-	    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
-	    text-align: center;
-	    font-size: 3.6em;
-	    color: white;
-        text-shadow: 0px 0px 30px Highlight;
-    }
-
-    header h2 {
-        margin-top: -40px;
-	    font-family: 'Pacifico', Arial, Helvetica, sans-serif;
-	    text-align: center;
-        font-size: 1.2em;
-	    color: white;
-        text-shadow: 0px 0px 30px Highlight;
-    }
-
-    img.download {
-        width: 75%;
         height: auto;
+        background-color: rgba(51, 51, 51, 0.9);
+        box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+        display: block;
     }
-
-    img.Smartphone {
+    li a {
+        display: none;
+        float: none;
+        text-align: center;
+    }
+    button ul li {
+        float: none;
+        border-right: none;
+    }
+    #dropdown-content {
+        margin-right: -299px;
+    }
+    .white {
+        background-color: white;
+        position: relative;
+        float: left;
+        width: 96%;
+        height: auto;
+        padding: 7% 2%;
+    }
+    .grey {
+        background-color: #f2f2f2;
+        position: relative;
+        float: left;
+        width: 96%;
+        height: auto;
+        padding: 7% 2%;
+    }
+    .Features-left {
+        width: 98%;
+    }
+    .Features-right {
+        width: 98%;
+    }
+    .flag {
+        position: absolute;
+    }
+    #norge-flag {
+        right: 43px;
+    }
+    #england-flag {
+        right: 1px;
+    }
+    footer {
+        width: 90%;
+        padding: 10px 5%;
+        margin-bottom: 0;
+    }
+    img.Smartphone-left {
         display: none;
     }
-
-    #who {
-        padding-top: 100px;
+    img.Smartphone-right {
+        display: none;
     }
 }

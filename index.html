@@ -1,179 +1,136 @@
-<!DOCTYPE html>
 <html lang="no">
-    
+
 <head>
     <title>BlindMate</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <link type="text/css" rel="stylesheet" href="css/Style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="ISO-8859-1">
+    <link type="text/css" rel="stylesheet" href="css/style.css" />
 </head>
-    
-<body id="home">
-    
-    <!-- Hovedmeny fast-Ã¸verst -->
-    <ul>
-        <li><img class="icon" src="img/smartphone-icon.png" alt="myATM" /></li>
-        <li><a href="#home">Hjem</a></li>
-        <li><a href="#who">MÃ¥lgruppen</a></li>
-        <li><a href="#about">Om produktet</a></li>
-        <li><a href="#download">Last ned</a></li>
-        <li class="lang"><a href="index-eng.html"><img class="flag" src="img/flag-en.png" alt="English" /></a></li>
-        <li class="lang"><a href="index.html"><img class="flag" src="img/flag-no.png" alt="Norwegin" /></a></li>
-    </ul>
 
-    <!-- Overtekst pÃ¥ hjem-skjermen --> 
-    <div class="outer">
+<body>
+    <div id="Home">
+        <button>
+            <div id="button">
+                <p href="#" id="p-menu">Meny</p>
+            </div>
+            <div id="dropdown-content">
+                <ul>
+                    <li><a href="#Home" tabindex="1">Hjem</a></li>
+                    <li><a href="#About" tabindex="2">BlindMate</a></li>
+                    <li><a href="#Problem" tabindex="3">Problem</a></li>
+                    <li><a href="#Features" tabindex="4">Funksjoner</a></li>
+                    <li><a href="#Download" tabindex="5">Last ned</a></li>
+                </ul>
+                <a href="index-eng.html" tabindex="6"><img src="img/flag-en.png" class="flag" id="england-flag" alt="English" /></a>
+                <a href="index.html" tabindex="7"><img src="img/flag-no.png" class="flag" id="norge-flag" alt="Norwegian" /></a>
+            </div>
+        </button>
+
         <header>
-            <h1>Blindmate</h1>
-            <h2>Din beste reise partner!</h2>
+            <div id="Header-container">
+                <h1 id="h1header">BlindMate</h1>
+                <h3 id="h3header">Din beste reisepartner!</h3>
+            </div>
+            <a href="#About"><img src="img/arrow.png" id="Arrow-down" alt="Scroll down" /></a>
         </header>
-    </div>
-    
-    <!-- Pil scrolle ned -->
-    <div class="arrow">
-        <a href="#who"><img class="arrow" src="img/arrow.png" alt="Scroll nedover" /></a>
-    </div>
 
-    <!-- Bakgrunnsbilde med parallax-effekt -->
-    <div class="parallax"></div>
+        <article class="grey" id="About">
+            <!--<img class="Smartphone-right" src="img/smartphone.png" alt="Smartphone" />-->
+            <h3>Om BlindMate</h3>
+            <p>BlindMate er et hjelpemiddel spesielt tilpasset blinde og svaksynte som ønsker å reise kollektivt. BlindMate ønsker å tilby en totalløsning som kan assistere til holdeplass, underveis på reisen og fra holdeplass til sluttdestinasjon. Ved hjelp av stemmeassistenten som benytter sanntidsinformasjon fra kollektivtransport holdes man oppdatert om forsinkelser og avvik både før og underveis på reisen.</p>
+            <div>
+                <a id="hide1" href="#hide1" class="hide">Klikk her for å lese mer om vår visjon..</a>
+                <a id="show1" href="#show1" class="show">Klikk her for å gjemme mer om vår visjon..</a>
+                <div class="details">
+                    <br />
+                    <h3>Vår visjon</h3>
+                    <p>Vårt mål med å tilby en løsning i form av et hjelpemiddel for blinde og svaksynte er å gjøre allerede tilgjengelige transportløsninger mer tilgjengelig for flere. Vårt overordnede, langsiktige mål utformer seg som en visjon om like muligheter for flere. Løsningen er muliggjort av teknologi mange har tilgjengelig i form av en smarttelefon. Derfor blir det naturlig å skape en løsning i form av en applikasjon til en smarttelefon. Det er et mål i seg selv at man skal kunne reise med kollektivtransport så sømløst som mulig. BlindMate ønsker derfor å tilby en så fullstendig løsning som mulig ved å kunne assistere fra startdestinasjon til sluttdestinasjon.</p>
+                    <p>Med rask teknologisk utvikling ser man også en stor økning i andel av befolkning som anvender tilgjengelig teknologi. På bakgrunn av spørreundersøkelser gjennomført av statistisk sentralbyrå var andel med smarttelefon i aldersgruppen 9-79 år i 2012 på 57% og i 2015 hadde denne andelen økt til 85% (<a target="_blank" href="http://medienorge.uib.no/statistikk/medium/ikt/388">http://medienorge.uib.no/statistikk/medium/ikt/388</a>). Dette betyr at det et stort potensiale for at mange vil kunne dra nytte av løsningen til en relativt lav ekstra kostnad for brukerne. Dette gjør utførelse av en løsning kostnadseffektivt og derfor mer tilgjengelig for flere brukere. For å tilrettelegge for blinde og svaksynte har BlindMate implementert en rekke tilleggsfunksjoner som f.eks. integrert kartinformasjon og ruters sanntidsinformasjon i funksjonene til BlindMate.</p>
+                </div>
+            </div>
+            <br /><br />
+        </article>
+        
+        <article class="white" id="Problem">
+            <!--<img class="Smartphone-left" src="img/smartphone.png" alt="Smartphone" />-->
+            <h3>Om problemet</h3>
+            <p>Blinde og svaksynte som ønsker å benytte seg av kollektivtilbud kan oppleve det som en utfordring. Utfordringen er ofte sammensatt av flere underproblemer som oppstår underveis på reisen.</p>
+            <div>
+                <a id="hide2" href="#hide2" class="hide">Klikk her for å lese mer om problemet..</a>
+                <a href="#Problem" class="show">Klikk her for å gjemme mer om problemet..</a>
+                <div class="details">
+                    <br />
+                    <h3>Mer om problemet</h3>
+                    <p>En av utfordringene med norsk kollektivtransport er at det ikke er fullstendig tilpasset blinde og svaksynte. Det kan være utfordrende for blinde og svaksynte å reise kollektivt, noe som fører til at det blir mindre brukt av denne gruppen. Blinde og svaksynte kan oppleve bruk av kollektivtilbud som en utfordring og derfor benytte seg av det i mindre grad, noe som fører til ulikhet. De mest sentrale problemene knyttet til å bruke kollektivtransport er eksempelvis:</p>
+                    <ul>
+                        <li>Finne riktig holdeplass</li>
+                        <li>Finne riktig avgang</li>
+                        <li>Overganger underveis på reisen</li>
+                        <li>Tilgang til informasjon underveis på reisen</li>
+                        <li>Informasjon om resterende reisetid og tydelig informasjon om tid igjen til holdeplass</li>
+                    </ul>
+                    <p>I følge tall fra Norges blindeforbund er det omtrent 180 000 mennesker i Norge som regnes som synshemmede (<a target="_blank" href="https://www.blindeforbundet.no/oyehelse-og-synshemninger/fakta-og-statistikk-om-synshemninger">https://www.blindeforbundet.no/oyehelse-og-synshemninger/fakta-og-statistikk-om-synshemninger</a>). For å få en dypere forståelse av utfordringen knyttet til bruk av kollektivtransport i Oslo og hvordan det oppleves i praksis ble det med Norges blindeforbunds hjelp gjennomført en uformell spørreundersøkelse.</p>
+                    <p>Det viser seg at problemene som oppleves som vanskeligst for blinde og svaksynte, er å gå på og bytte mellom buss/trikk/tog. Hele 94 % av deltakerne bruker kollektiv transport noen ganger per måned eller per uke. Undersøkelsen viser at 70 % av de spurte ville reist mer med kollektivtransport hvis løsningen ble lansert. Dette viser at det er en stor brukergruppe som vil kunne bruke BlindMate.</p>
+                </div>
+            </div>
+            <br /><br />
+        </article>
 
-    <!-- Hvem bruker vÃ¥rt produkt? -->
-    <div id="who" class="main">
-        <img class="Smartphone" src="img/smartphone.png" alt="Smartphone" />
-        <h1>Hvem bruker BlindMate, og hvorfor?</h1>
-        <h2>Appen er designet for de blinde og svaksynte, men kan brukes av alle!</h2>
-            <details>
-                <summary>
-                    <p class="text">
-                        Blinde og svaksynte som Ã¸nsker Ã¥ benytte seg av kollektivtilbud kan oppleve det som en utfordring. Utfordringen er ofte sammensatt av flere underproblemer som oppstÃ¥r underveis pÃ¥ reisen.
-                    </p>
-                </summary>
-                <p class="text">
-                    En utfordring med norsk kollektivtransport er at det ikke er fullstendig tilpasset blinde og svaksynte. Det kan vÃ¦re utfordrende for blinde og svaksynte Ã¥ reise kollektivt, noe som fÃ¸rer til at det blir mindre brukt av blinde og svaksynte. Dette er en uheldig effekt da kollektivtilbudet i Oslo er godt utviklet. Blinde og svaksynte bÃ¸r pÃ¥ lik linje med alle andre ha mulighet til Ã¥ bruke disse tjenestene. De mest sentrale problemene knyttet til Ã¥ bruke kollektivtransport er eksempelvis:<br />
-                    &emsp;&emsp; â€¢ Ã… finne riktig holdeplass<br />
-                    &emsp;&emsp; â€¢ Ã… finne riktig avgang<br />
-                    &emsp;&emsp; â€¢ Overganger underveis pÃ¥ reisen<br />
-                    &emsp;&emsp; â€¢ Informasjon om resterende reisetid og tydelig informasjon om tid igjen til holdeplass
-                    <br /><br />
-                    Det ble ogsÃ¥ gjennomfÃ¸rt lokale undersÃ¸kelser for Ã¥ kartlegge hvilke utfordringer som oppleves i praksis. I den forbindelse ble Norges blindeforbund kontaktet og det ble utfÃ¸rt en spÃ¸rreundersÃ¸kelse blant medlemmene angÃ¥ende BlindMate, i fÃ¸lge tall fra Norges blindeforbund er det omlag 180 000 mennesker i Norge som regnes som synshemmede.
-                    <br /><br />
-                    UndersÃ¸kelsen viser at 70 % av de spurte ville reist mer kollektivt hvis vÃ¥r lÃ¸sning ble lansert. Det viser seg at problemene som oppleves som vanskeligst for blinde og svaksynte, er Ã¥ gÃ¥ pÃ¥ og bytte mellom buss/trikk/tog. Hele 94 % bruker kollektiv transport noen ganger i mÃ¥neden eller uken. Dette viser at det er en stor brukergruppe som vil kunne bruke BlindMate.
-                </p>
-            </details>
-    </div>
-    
-    <hr />
-    
-    <!-- Om produktet vÃ¥rt -->
-    <div id="about" class="main">
-        <!--<img class="Smartphone" src="img/smartphone-no.png" alt="Smartphone" />-->
-        <img class="Smartphone" src="img/smartphone.png" alt="Smartphone" />
-        <h1>Hva er BlindMate?</h1>
-        <h2>BlindMate er en total reiselÃ¸sning for blinde og svaksynte.</h2>
-        <div>
-            <details>
-                <summary>
-                    <p class="text">
-                        BlindMate er et hjelpemiddel, spesielt tilpasset blinde og svaksynte som Ã¸nsker Ã¥ reise kollektivt. BlindMate Ã¸nsker Ã¥ tilby en totallÃ¸sning som kan assistere til holdeplass, underveis pÃ¥ reisen og fra holdeplass til sluttdestinasjon. Ved hjelp av stemmeassistenten som benytter sanntidsinformasjon fra kollektivtransport holdes man oppdatert om forsinkelser og avvik bÃ¥de fÃ¸r og underveis pÃ¥ reisen.
-                    </p>
-                </summary>
-                <p class="text">
-                    VÃ¥rt mÃ¥l med Ã¥ tilby en lÃ¸sning i form av et hjelpemiddel for blinde og svaksynte er Ã¥ gjÃ¸re allerede tilgjengelige transportlÃ¸sninger mer tilgjengelig for flere. VÃ¥rt overordnede, langsiktige mÃ¥l utformer seg som en visjon om like muligheter for flere. LÃ¸sningen er muliggjort av teknologi mange har tilgjengelig ved hjelp av en smarttelefon, noe som gjÃ¸r det naturlig Ã¥ skape en lÃ¸sning som er tilgjengelig i form av en applikasjon til en smarttelefon. Det er et mÃ¥l i seg selv at man skal kunne reise med kollektivtransport sÃ¥ sÃ¸mlÃ¸st som mulig. BlindMate Ã¸nsker derfor Ã¥ tilby en sÃ¥ fullstendig lÃ¸sning som mulig ved Ã¥ kunne assistere fra startdestinasjon til sluttdestinasjon.
-                    <br /><br />
-                    Med rask teknologisk utvikling ser man ogsÃ¥ en stor Ã¸kning i andel av befolkning som anvender tilgjengelig teknologi. PÃ¥ bakgrunn av spÃ¸rreundersÃ¸kelser gjennomfÃ¸rt av statistisk sentralbyrÃ¥ var andel med smarttelefon i aldersgruppen 9-79 Ã¥r i 2012 pÃ¥ 57% og i 2015 hadde denne andelen Ã¸kt til 85% <a href="http://medienorge.uib.no/statistikk/medium/ikt/388">http://medienorge.uib.no/statistikk/medium/ikt/388</a>. Med hÃ¸y smarttelefonandel eksisterer det et stort potensiale for at mange vil kunne dra nytte av lÃ¸sningen til en lav ekstra kostnad for brukerne. Dette gjÃ¸r utfÃ¸relse av en lÃ¸sning svÃ¦rt kostnadseffektivt og derfor mer tilgjengelig for flere brukere, noe som er et viktig moment i henhold til tilgjengelighet da lÃ¸sningen blir tilgjengelig for en stor andel av de som har behov for den. For Ã¥ tilrettelegge for blinde og svaksynte har BlindMate implementert en rekke tilleggsfunksjoner som tilrettelegger og implementerer bruken av bÃ¥de kartinformasjon og ruters sanntidsinformasjon i funksjonene i BlindMate.
-                </p>
-            </details>
-        </div>
-        <div>
-            <img class="Smartphone" src="img/smartphone.png" alt="Smartphone" />
-            <details>
-                <summary>
-                    <h2>Stemmestyring</h2>
-                    <p class="text">
-                        For Ã¥ forenkle mulighetene for inntasting er stemmekontroll i form av en stemmestyrt assistent mulig Ã¥ aktivere ved fÃ¸rste oppstart. Man kan da fÃ¥ optimaliserte reiseforslag for svaksynte og blinde lest opp ved hjelp av stemmekontroll.
-                    </p>
-                </summary>
-                <p class="text">
-                    Den integrerte stemmeassistenten gjÃ¸r at applikasjonen ogsÃ¥ kan vÃ¦re en ekstra veiledning for svaksynte som bruker den tilgjengelige kartinformasjon med hÃ¸y kontrast til Ã¥ navigere. Ved Ã¥ selv kunne regulere frekvens og hvilken informasjon som skal distribueres via stemmeassistenten kan applikasjonen brukes i bÃ¥de i omrÃ¥der som allerede er kjent for brukeren til byer og omrÃ¥der som brukeren besÃ¸ker for fÃ¸rste gang. Muligheten til Ã¥ regulere hva slags informasjon og hyppigheten informasjonen skal annonseres for brukeren gjÃ¸r BlindMate egnet for en stor brukergruppe med varierende grad av synshemning.
-                </p>
-            </details>
-        </div>
-        <div>
-            <img class="Smartphone" src="img/smartphone.png" alt="Smartphone" />
-            <details>
-                <summary>
-                    <h2>Veiledning til holdeplasser</h2>
-                    <p class="text">
-                        Etter at BlindMate har generert et reiseforslag vil den kunne bistÃ¥ til Ã¥ navigere fra nÃ¥vÃ¦rende plassering eller valgt startplassering til holdeplassen for buss/tog/trikk. Ved Ã¥ tilby veiledning bÃ¥de ved hjelp av en stemmeassistent og et brukergrensesnitt med hÃ¸y kontrast skal navigasjon gjÃ¸res enklere til Ã¸nsket holdeplass for bÃ¥de svaksynte og blinde. I tillegg til stemmeassistenten fÃ¥r brukeren presentert muligheten til Ã¥ vise et kart i hÃ¸y kontrast tilpasset svaksynte.
-                    </p>
-                </summary>
-                <p class="text">
-                    LÃ¸sningen er integrert med Ruter-labs API, noe som gjÃ¸r at lÃ¸sningen har tilgang til en allerede godt utviklet lÃ¸sning for sanntidsinformasjon. I tillegg bruker BlindMate Google Maps som kilde til kartinformasjon, dette gjÃ¸r at lÃ¸sningen har tilgang til svÃ¦rt detaljert kartinformasjon og kontinuerlig oppdatert trafikkinformasjon som blir hensyntatt av BlindMates reiseplanlegger.
-                </p>
-            </details>
-        </div>
-        <div>
-            <img class="Smartphone" src="img/smartphone.png" alt="Smartphone" />
-            <details>
-                <summary>
-                    <h2>Finne riktig avgang</h2>
-                    <p class="text">
-                        Den integrerte stemmeassisten tilbyr veiledning og navigasjon for Ã¥ finne korrekt avgang fra holdeplassen. Stemmeassistenten oppdaterer brukeren i sanntid om eventuelle forsinkelser samt nÃ¥r valgt avgang ankommer holdeplass og er tilgjengelig for pÃ¥stigning.
-                    </p>
-                </summary>
-                <p class="text">
-                    En av de mest Ã¥penbare utfordringene med Ã¥ reise kollektivt for svaksynte og blinde er Ã¥ finne riktig avgang fra holdeplassen. PÃ¥ holdeplasser med hÃ¸yt stÃ¸ynivÃ¥ vil det vÃ¦re svÃ¦rt vanskelig Ã¥ bÃ¥de lokalisere riktig avgang, men ogsÃ¥ Ã¥ skille avgangene fra hverandre hvis det er kort tid mellom avganger. BlindMate bruker derfor sanntidsinformasjon kombinert med stemmeassistenten for Ã¥ tilby tilpasset informasjon direkte via applikasjonen om hvilke avganger som er tilgjengelig, tid til avreise og eventuelle avvik i sanntid.
-                </p>
-            </details>
-        </div>
-        <div>
-            <img class="Smartphone" src="img/smartphone.png" alt="Smartphone" />
-            <details>
-                <summary>
-                    <h2>Assistanse underveis</h2>
-                    <p class="text">
-                        Underveis pÃ¥ reisen har man full tilgang til stemmestyrt assistanse. Den stemmestyrte assistenten tilbyr blant annet informasjon bÃ¥de om estimert reisetid og informasjon pÃ¥ forhÃ¥nd om tid igjen til Ã¸nsket stopp ved enten Ã¥ trykke pÃ¥ ikonet pÃ¥ skjermen eller ved Ã¥ spÃ¸rre stemmeassistenten. Ved bytte underveis pÃ¥ reisen vil man ogsÃ¥ fÃ¥ nÃ¸dvendig informasjon presentert av stemmeassistenten. Informasjon fra stemmeassistenten blir ogsÃ¥ presentert pÃ¥ skjermen for svaksynte.
-                    </p>
-                </summary>
-                <p class="text">
-                    Ved Ã¥ integrere en stemmeassistent i kombinasjon med sanntidsinformasjon fra Ruter og Google Maps i applikasjonen vil man ha tilgang til oppdatert stemmestyrt veiledning i lÃ¸pet av hele reisen. Ved Ã¥ selv kunne tilpasse type informasjon og frekvens kan brukeren forme stemmeassistenten til sine preferanser. Assistanse underveis vil, om Ã¸nskelig , ta hensyn til hvor frekvent du reiser den aktuelle ruten, pÃ¥ denne mÃ¥ten vil brukeren kunne velge hvilken informasjon som skal bli presentert av stemmeassistenten pÃ¥ mer kjente reiser.
-                    <br /><br />
-                    PÃ¥ bakgrunn av BlindMates Ã¸nske om Ã¥ tilby en totallÃ¸sning vil applikasjonen ogsÃ¥ veilede brukeren i forbindelse med overganger. Er man nÃ¸dt til Ã¥ gÃ¥ til neste holdeplass vil BlindMate bruke nÃ¥vÃ¦rende plassering for Ã¥ fortsette veiledningen til fots nÃ¥r brukeren reiser mellom holdeplasser.
-                </p>
-            </details>
-        </div>
-        <div>
-            <img class="Smartphone" src="img/smartphone.png" alt="Smartphone" />
-            <details>
-                <summary>
-                    <h2>Veien videre</h2>
-                    <p class="text">
-                        BlindMate etterstreber Ã¥ vÃ¦re en lÃ¦rende organisasjon for Ã¥ kunne bidra til sosial innovasjon. Ved Ã¥ integrere noen av de beste allerede eksisterende lÃ¸sningene i markedet og Ã¥ optimalisere disse for blinde og svaksynte minimerer man utviklingstid (time to market). Ved Ã¥ integrere allerede velutviklede lÃ¸sninger sikrer man bÃ¥de kort utviklingstid og man maksimerer tilgang til tilgjengelige funksjoner.
-                    </p>
-                </summary>
-                <p class="text">
-                    Stemmeassistenten vil ogsÃ¥ kunne benytte seg av sanntidsinformasjon fra andre byer i en kontinuerlig utvikling. Dette vil oppdateres og bli tilgjengelig i applikasjonen fortlÃ¸pende. PÃ¥ et senere stadium i utviklingen vil applikasjonen ogsÃ¥ kunne integrere informasjon fra eksempelvis flyplasser med direkte tilgang til gate-informasjon i lÃ¸sningen samt integrasjon av interregionale reisealternativer. Videreutvikling og forbedring er viktig for oss i BlindMate. Vi Ã¸nsker Ã¥ tilby et hjelpemiddel som bruker teknologi til Ã¥ skape mer likhet. Videreutvikling og tilpasning til situasjoner i den virkelige verden gjÃ¸res mest effektivt ved tilbakemeldinger fra brukere.
-                    <br /><br />
-                    For Ã¥ kunne forbedre lÃ¸sningen pÃ¥ en optimal mÃ¥te verdsetter vi i BlindMate tilbakemeldinger fra brukere. BlindMate integrer derfor muligheten til Ã¥ gi tilbakemeldinger i applikasjonen. Dette tror vi i BlindMate skaper en vinn-vinn-situasjon da brukerne fÃ¥r en bedre lÃ¸sning og vi i BlindMate drar nytte av lÃ¦ringskurveeffekter pÃ¥ et tidlig stadium. En stor lÃ¦ringskurveeffekt tillater ogsÃ¥ lavere marginalkostnader som gjÃ¸r det mulig Ã¥ tilby lÃ¸sningen til en lavere pris, dette bidrar til at lÃ¸sningen blir mer tilgjengelig for flere brukere. (Besanko, D., Dranove, D., Shanley, M. og Schaefer, S. (2013) Economics of strategy. John Wiley Sons. Singapore.).
-                </p>
-            </details>
-        </div>
-    </div>
-    
-    <!-- Nedlasting -->
-    <div id="download" class="download">
-        <h1>Last ned BlindMate her.</h1>
-        <h2>Bruk lenkene under for Ã¥ laste ned din versjon av BlindMate nÃ¥.</h2>
-        <p><br /></p>
-        <a target="_blank" href="https://play.google.com/store/apps/collection/topselling_free"><img class="download" src="img/android.png" alt="Nedlasting for Android" /></a>
-        <a target="_blank" href="http://www.apple.com/itunes/charts/free-apps/"><img class="download" src="img/ios.png" alt="Nedlasting for iOS" /></a>
-        <p><br /></p>
-    </div>
+        <article class="grey" id="Features">
+            <h3>Funksjoner</h3>
+            <br />
+            <div class="Features-left" id="Voice">
+                <a href="features.html#Voice"><img src="img/mic.png" class="feature-logo" alt="Stemmestyring" /></a>
+                <h4 class="feature-heading">Stemmestyring</h4>
+                <p class="feature-p">For å forenkle mulighetene for inntasting er stemmekontroll i form av en stemmestyrt assistent mulig å aktivere ved første oppstart. Man kan da få optimaliserte reiseforslag for svaksynte og blinde lest opp og forklart ved hjelp av stemmekontroll.</p>
+                <a href="features.html#Voice">Les mer om stemmestyring</a>
+            </div>
+            <div class="Features-right" id="Guide">
+                <a href="features.html#Guide"><img src="img/man.png" class="feature-logo" alt="Veiledning til holdeplasser" /></a>
+                <h4 class="feature-heading">Veiledning til holdeplasser</h4>
+                <p class="feature-p">Etter at BlindMate har generert et reiseforslag vil den kunne bistå til å navigere fra nåværende plassering eller valgt startplassering til holdeplassen for buss/tog/trikk. Ved å tilby veiledning både ved hjelp av en stemmeassistent og et brukergrensesnitt med høy kontrast skal navigasjon gjøres enklere for både svaksynte og blinde. I tillegg til stemmeassistenten får brukeren presentert muligheten til å vise et kart i høy kontrast tilpasset svaksynte.</p>
+                <a href="features.html#Guide">Les mer om veiledning</a>
+            </div>
+        </article>
 
-    <!-- Footer -->
-    <footer id="footer">
-        <p class="footer">Copyright &copy;2016 Tommy Pedersen. All rights reserved.</p>
-    </footer>
-    
+        <article class="white">
+            <div class="Features-left" id="Find">
+                <a href="features.html#Find"><img src="img/bell.png" class="feature-logo" alt="Finne riktig avgang" /></a>
+                <h4 class="feature-heading">Finne riktig avgang</h4>
+                <p class="feature-p">Den integrerte stemmeassisten tilbyr veiledning og navigasjon for å finne korrekt avgang fra holdeplassen. Stemmeassistenten oppdaterer brukeren i sanntid om eventuelle forsinkelser samt når valgt avgang ankommer holdeplass og er tilgjengelig for påstigning.</p>
+                <a href="features.html#Find">Les mer om riktig avgang</a>
+            </div>
+            <div class="Features-right" id="Assist">
+                <a href="features.html#Assist"><img src="img/speaker.png" class="feature-logo" alt="Assistanse underveis" /></a>
+                <h4 class="feature-heading">Assistanse underveis</h4>
+                <p class="feature-p">Underveis på reisen har man full tilgang til stemmestyrt assistanse. Den stemmestyrte assistenten tilbyr blant annet informasjon både om estimert reisetid og informasjon på forhånd om tid igjen til ønsket stopp ved enten å trykke på ikonet på skjermen eller ved å spørre stemmeassistenten. Ved bytte underveis på reisen vil man også få nødvendig informasjon presentert av stemmeassistenten. Informasjon fra stemmeassistenten blir også presentert på skjermen for svaksynte.</p>
+                <a href="features.html#Assist">Les mer om assistanse</a>
+            </div>
+        </article>
+
+        <article class="grey">
+            <div class="Features-more" id="Road">
+                <a href="features.html#Road"><img src="img/bus.png" class="feature-logo" alt="The road ahead" /></a>
+                <h4 class="feature-heading">Veien videre</h4>
+                <p class="feature-p">BlindMate etterstreber å være en lærende organisasjon for å kunne bidra til sosial innovasjon. Ved å integrere noen av de beste allerede eksisterende løsningene i markedet og å optimalisere disse for blinde og svaksynte minimerer man utviklingstid (time to market). Ved å integrere allerede velutviklede løsninger sikrer man både kort utviklingstid og man maksimerer tilgang til tilgjengelige funksjoner.</p>
+                <a href="features.html#Road">Les mer om veien videre</a>
+            </div>
+        </article>
+
+        <article class="white">
+            <h3>Last ned BlindMate</h3>
+            <br />
+            <div class="Features-left" id="Android">
+                <a target="_blank" href="https://play.google.com/store/apps/collection/topselling_free"><img src="img/android.png" class="download-logo" alt="Last ned for Android" /></a>
+            </div>
+            <div class="Features-right" id="iOS">
+                <a target="_blank" href="http://www.apple.com/itunes/charts/free-apps/"><img src="img/ios.png" class="download-logo" alt="Last ned for iPhone" /></a>
+            </div>
+        </article>
+
+        <footer id="Download">
+            <p class="footer">Copyright &copy;2016 OsloDev ASA. All rights reserved.</p>
+            <p class="footer">Created by OsloDev ASA.</p>
+        </footer>
+    </div>
 </body>
 </html>

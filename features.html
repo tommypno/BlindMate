@@ -1,101 +1,135 @@
+﻿<!DOCTYPE html>
 <html lang="no">
-
 <head>
-    <title>BlindMate</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BlindMate - Din beste reisepartner!">
     <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link rel="shortcut icon" icon' type="image/x-icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" href="favicon.png">
+    <title>BlindMate Funksjoner</title>
 </head>
-
 <body>
+
+    <!-- Hovedmeny fast-øverst -->
     <div id="Home">
         <div id="navigation">
             <ul class="nav">
-                <li class="link"> <a class="main" href="#m1">Meny</a>
+                <li class="link"><a class="main" href="#">Meny</a>
                     <ul class="sub">
                         <li><a href="index.html#Home" tabindex="0">Hjem</a></li>
                         <li><a href="index.html#About">BlindMate</a></li>
-                        <li><a href="index.html#Problem">Problemet</a></li>
+                        <li><a href="index.html#Problem">Problem</a></li>
                         <li><a href="index.html#Features">Funksjoner</a></li>
                         <li><a href="index.html#Download">Last ned</a></li>
                     </ul>
                 </li>
             </ul>
         </div>
-        <a href="features-eng.html"><img src="img/flag-en.png" class="flag" id="england-flag" alt="English" /></a>
-        <a href="features.html"><img src="img/flag-no.png" class="flag" id="norge-flag" alt="Norwegian" /></a>
+        <a href="features-eng.html"><img src="img/flag-en.jpg" class="flag" id="england-flag" alt="English" /></a>
+        <a href="features.html"><img src="img/flag-no.jpg" class="flag" id="norge-flag" alt="Norwegian" /></a>
 
+        <!-- Ingen bilder på hjem-skjermen --> 
         <header class="no-img"></header>
         
+        <!-- Hovedside -->
         <br /><br /><br />
         <h3>Funksjoner</h3>
         <br />
         <article class="white" id="Voice">
-            <img class="Smartphone-right" src="img/smartphone/voice.png" alt="Voice" />
+            <img class="smartphone" src="img/smartphone/voice.png" alt="Voice" />
             <div class="Features-more">
                 <img src="img/features/mic.png" class="feature-logo" alt="Stemmestyring" />
                 <h4 class="feature-heading">Stemmestyring</h4>
-                <p class="feature-p">For å forenkle mulighetene for inntasting er stemmekontroll i form av en stemmestyrt assistent mulig å aktivere ved første oppstart. Man kan da få optimaliserte reiseforslag for svaksynte og blinde lest opp og forklart ved hjelp av stemmekontroll.</p>
-                <p class="feature-p">Den integrerte stemmeassistenten gjør at applikasjonen også kan være en ekstra veiledning for svaksynte som kan bruke kartinformasjon med høy kontrast for å navigere. Ved å kunne regulere frekvens og hvilken informasjon som skal distribueres via stemmeassistenten kan informasjonsflyten tilpasses. Dette gjør at applikasjonen kan brukes i både i områder som er kjent for brukeren og i områder som brukeren besøker for første gang.</p>
-                <p class="feature-p">Muligheten til å regulere hva slags informasjon og hyppighet av annonsering for brukeren gjør BlindMate egnet for en stor brukergruppe med varierende grad av synshemning.</p>
+                <p class="feature-p"><em>Stemmekontroll med en stemmestyrt assistent kan aktiveres som standard inntastingsmetode. Dette gjør inntasting enklere for blinde og svaksynte. Man kan da få optimaliserte reiseforslag for svaksynte og blinde lest opp og forklart ved hjelp av stemmekontroll.</em></p>
+                <h4>Stemmeassistenten</h4>
+                <p class="feature-p">Stemmeassistenten tilbyr veiledning underveis på reisen og mer informasjon med stemmekommandoer. Med stemmeassistenten og kartinformasjon i høy kontrast kan svaksynte bruke BlindMate som ekstra veiledning. Brukeren kan velge frekvens og hvilken informasjon som skal brukes av stemmeassistenten.</p>
+                <p class="feature-p">Dette gjør BlindMate egnet for en stor brukergruppe med forskjellig grad av synshemning. BlindMate kan brukes i områder som er kjent for brukeren og i områder som brukeren besøker for første gang.</p>
                 <a href="index.html#Voice">Gå tilbake...</a>
                 <br />
             </div>
         </article>
 
         <article class="grey" id="Guide">
-            <img class="Smartphone-right" src="img/smartphone/guide.png" alt="Guide" />
+            <img class="smartphone" src="img/smartphone/guide.png" alt="Guide" />
             <div class="Features-more">
                 <img src="img/features/man.png" class="feature-logo" alt="Veiledning til holdeplasser" />
                 <h4 class="feature-heading">Veiledning til holdeplasser</h4>
-                <p class="feature-p">Etter at BlindMate har generert et reiseforslag vil den kunne bistå til å navigere fra nåværende plassering eller valgt startplassering til holdeplassen for buss/tog/trikk. Ved å tilby veiledning både ved hjelp av en stemmeassistent og et brukergrensesnitt med høy kontrast skal navigasjon gjøres enklere for både svaksynte og blinde. I tillegg til stemmeassistenten får brukeren presentert muligheten til å vise et kart i høy kontrast tilpasset svaksynte.</p>
-                <p class="feature-p">Løsningen er integrert med Ruter-labs API, noe som gjør at løsningen har anvender en allerede godt utviklet løsning for sanntidsinformasjon. Google Maps brukes som kilde til kartinformasjon, dette gjør at løsningen har tilgang til detaljert kartinformasjon og kontinuerlig oppdatert trafikkinformasjon som blir hensyntatt av BlindMates reiseplanlegger.</p>
+                <p class="feature-p"><em>BlindMate kan lage et reiseforslag tilpasset blinde og svaksynte. BlindMate kan også veilede fra nåværende plassering eller valgt startplassering til holdeplassen for buss/tog/trikk. Ved å ha en stemmeassistent og et kart med høy kontrast skal navigasjon gjøres enklere.</em></p>
+                <h4>Sanntidsinformasjon</h4>
+                <p class="feature-p">Løsningen er integrert med Ruter-labs API (et Application Programming Interface bruker funksjoner fra tilbyderen). BlindMate bruker derfor en godt utviklet løsning for sanntidsinformasjon om kollektivtransport. Google Maps brukes til kart, dette gjør at løsningen har tilgang til detaljert kartinformasjon og oppdatert trafikkinformasjon. Disse tjenestene blir integrert i BlindMates reiseplanlegger.</p>
+                <p class="feature-p">BlindMate bytter mellom veiledning ombord på kjøretøy og gangnavigasjon. Brukeren oppdateres om avvik når man går mellom holdeplasser eller fra holdeplass til ønsket destinasjon.</p>
                 <a href="index.html#Guide">Gå tilbake...</a>
                 <br />
             </div>
         </article>
 
         <article class="white" id="Find">
-            <img class="Smartphone-right" src="img/smartphone/find.png" alt="Find" />
+            <img class="smartphone" src="img/smartphone/find.png" alt="Find" />
             <div class="Features-more">
                 <img src="img/features/bell.png" class="feature-logo" alt="Finne riktig avgang" />
                 <h4 class="feature-heading">Finne riktig avgang</h4>
-                <p class="feature-p">Den integrerte stemmeassisten tilbyr veiledning og navigasjon for å finne korrekt avgang fra holdeplassen. Stemmeassistenten oppdaterer brukeren i sanntid om eventuelle forsinkelser samt når valgt avgang ankommer holdeplass og er tilgjengelig for påstigning.</p>
-                <p class="feature-p">En av de mest åpenbare utfordringene med å reise kollektivt for svaksynte og blinde er å finne riktig avgang fra holdeplassen. På holdeplasser med høyt støynivå vil det være svært vanskelig å både lokalisere riktig avgang, men også å skille avgangene fra hverandre hvis det er kort tid mellom avganger. BlindMate bruker derfor sanntidsinformasjon kombinert med stemmeassistenten for å tilby tilpasset informasjon direkte via applikasjonen om hvilke avganger som er tilgjengelig, tid til avreise og eventuelle avvik i sanntid.</p>
+                <p class="feature-p"><em>Stemmeassisten veileder brukeren til å finne riktig avgang fra holdeplassen. Stemmeassistenten oppdaterer brukeren i sanntid om forhold som er relevant for brukerens avgang. Stemmeassistenten oppdaterer om eventuelle forsinkelser, når valgt avgang ankommer holdeplass og er tilgjengelig for påstigning.</em></p>
+                <h4>På holdeplassen</h4>
+                <p class="feature-p">En av utfordringene med å reise kollektivt er å finne riktig avgang fra holdeplassen. På holdeplasser med mye støy kan det være vanskelig å:</p>
+                <ol>
+                    <li>Finne riktig avgang</li>
+                    <li>Skille avgangene fra hverandre hvis det er kort tid mellom avganger.</li>
+                </ol>
+                <p class="feature-p">BlindMate bruker sanntidsinformasjon og stemmeassistenten for å tilby tilpasset informasjon om:</p>
+                <ol>
+                    <li>Hvilke avganger som er tilgjengelig</li>
+                    <li>Tid til avreise for valgt avgang</li>
+                    <li>Avvik i sanntid</li>
+                </ol>
                 <a href="index.html#Find">Gå tilbake...</a>
                 <br />
             </div>
         </article>
 
         <article class="grey" id="Assist">
-            <img class="Smartphone-right" src="img/smartphone/assist.png" alt="Assist" />
+            <img class="smartphone" src="img/smartphone/assist.png" alt="Assist" />
             <div class="Features-more">
                 <img src="img/features/speaker.png" class="feature-logo" alt="Assistanse underveis" />
                 <h4 class="feature-heading">Assistanse underveis</h4>
-                <p class="feature-p">Underveis på reisen har man full tilgang til stemmestyrt assistanse. Den stemmestyrte assistenten tilbyr blant annet informasjon både om estimert reisetid og informasjon på forhånd om tid igjen til ønsket stopp ved enten å trykke på ikonet på skjermen eller ved å spørre stemmeassistenten. Ved bytte underveis på reisen vil man også få nødvendig informasjon presentert av stemmeassistenten. Informasjon fra stemmeassistenten blir også presentert på skjermen for svaksynte.</p>
-                <p class="feature-p">Ved å integrere en stemmeassistent i kombinasjon med sanntidsinformasjon fra Ruter og Google Maps i applikasjonen vil man ha tilgang til oppdatert stemmestyrt veiledning i løpet av hele reisen. Ved å selv kunne tilpasse type informasjon og frekvens kan brukeren forme stemmeassistenten til sine preferanser. Assistanse underveis vil, om ønskelig , ta hensyn til hvor frekvent du reiser den aktuelle ruten, på denne måten vil brukeren kunne velge hvilken informasjon som skal bli presentert av stemmeassistenten på mer kjente reiser.</p>
-                <p class="feature-p">På bakgrunn av BlindMates ønske om å tilby en totalløsning vil applikasjonen også veilede brukeren i forbindelse med overganger. Er man nødt til å gå til neste holdeplass vil BlindMate bruke nåværende plassering for å fortsette veiledningen til fots når brukeren reiser mellom holdeplasser.</p>
+                <p class="feature-p"><em>Underveis på reisen har brukeren stemmestyrt assistanse. Den stemmestyrte assistenten kan blant annet informere om reisetid og tid til ønsket stopp. Dette blir tilgjengelig enten ved å trykke på ikonet eller ved å spørre. Ved bytte underveis på reisen vil man få informasjon og veiledning av stemmeassistenten.</em></p>
+                <h4>Alltid tilgjengelig</h4>
+                <p class="feature-p">Stemmeassistenten bruker sanntidsdata fra Ruter og Google Maps. Brukeren har alltid tilgang til oppdatert veiledning i løpet av reisen. Brukeren kan tilpasse type informasjon og frekvens for å få en personlig stemmeassistent.</p>
+                <p class="feature-p">Assistanse underveis vil, om aktivert, ta hensyn til hvor ofte brukeren reiser en aktuell rute. Brukeren vil da kunne bestemme hvilken informasjon som skal presenteres av stemmeassistenten på kjente reiser.</p>
+                <p class="feature-p">BlindMates ønsker å tilby en sømløs løsning. Derfor vil stemmeassistenten veilede brukeren ved overganger. Hvis brukeren må gå til neste holdeplass vil BlindMate bruke plasseringen til brukeren for å fortsette veiledningen. Som en tilleggsfunksjon for svaksynte kan informasjon fra stemmeassistenten også vises på skjermen i høy kontrast.</p>
                 <a href="index.html#Assist">Gå tilbake...</a>
                 <br />
             </div>
         </article>
 
         <article class="white" id="Road">
-            <img class="Smartphone-right" src="img/smartphone/front.png" alt="Road" />
+            <img class="smartphone" src="img/smartphone/front.png" alt="Road" />
             <div class="Features-more">
                 <img src="img/features/bus.png" class="feature-logo" alt="Veien videre" />
                 <h4 class="feature-heading">Veien videre</h4>
-                <p class="feature-p">BlindMate etterstreber å være en lærende organisasjon for å kunne bidra til sosial innovasjon. Ved å integrere noen av de beste allerede eksisterende løsningene i markedet og å optimalisere disse for blinde og svaksynte minimerer man utviklingstid (time to market). Ved å integrere allerede velutviklede løsninger sikrer man både kort utviklingstid og man maksimerer tilgang til tilgjengelige funksjoner.</p>
-                <p class="feature-p">Stemmeassistenten vil også kunne benytte seg av sanntidsinformasjon fra andre byer i en kontinuerlig utvikling. Dette vil oppdateres og bli tilgjengelig i applikasjonen fortløpende. På et senere stadium i utviklingen vil applikasjonen også kunne integrere informasjon fra eksempelvis flyplasser med direkte tilgang til gate-informasjon i løsningen samt integrasjon av interregionale reisealternativer. Videreutvikling og forbedring er viktig for oss i BlindMate. Vi ønsker å tilby et hjelpemiddel som bruker teknologi til å skape mer likhet. Videreutvikling og tilpasning til situasjoner i den virkelige verden gjøres mest effektivt ved tilbakemeldinger fra brukere.</p>
-                <p class="feature-p">For å kunne forbedre løsningen på en optimal måte verdsetter vi i BlindMate tilbakemeldinger fra brukere. BlindMate integrer derfor muligheten til å gi tilbakemeldinger i applikasjonen. Dette tror vi i BlindMate skaper en vinn-vinn-situasjon da brukerne får en bedre løsning og vi i BlindMate lærer av dette som organisasjon. Læringen man oppnår med gode tilbakemeldinger bidrar blant annet til at vi i BlindMate kontinuerlig kan utvikle løsningen med fokus på kontinuerlig forbedring.</p>
+                <p class="feature-p"><em>BlindMate ønsker å lære for å kunne bidra til sosial innovasjon. Vi ønsker å integrere noen av de beste løsningene i markedet og å tilpasse disse for blinde og svaksynte. Dette gjør at løsningen bruker allerede utprøvd teknologi og er raskt tilgjengelig.</em></p>
+                <h4>Utvikling</h4>
+                <p class="feature-p">I fremtiden skal BlindMate kunne benytte seg av sanntidsinformasjon fra andre byers kollektivtilbud. Dette vil oppdateres og bli tilgjengelig i applikasjonen. Som et langsiktig mål vil applikasjonen også kunne brukes på:</p>
+                <ol>
+                    <li>Flyplasser, med tilgang til gate-informasjon</li>
+                    <li>Internasjonale reiser med fly, skip eller tog</li>
+                </ol>
+                <h4>Tilbakemeldinger</h4>
+                <p class="feature-p">Forbedring er viktig for BlindMate. For å forbedre BlindMate ønsker vi å fortsette utviklingen med erfaringer fra den virkelige verden. For forbedre løsningen, setter vi i BlindMate pris på tilbakemeldinger fra brukere. For å gjøre det enkelt å gi tilbakemeldinger, er tilbakemeldinger integrert i applikasjonen. Tilbakemeldinger tror vi i BlindMate skaper en vinn-vinn-situasjon fordi:</p>
+                <ol>
+                    <li>Brukerne får en bedre løsning</li>
+                    <li>BlindMate bruker tilbakemeldinger til læring og forbedring</li>
+                </ol>
+                <p class="feature-p">Læringen vi oppnår med tilbakemeldinger gjør at vi alltid kan forbedre løsningen vi tilbyr.</p>
                 <a href="index.html#Road">Gå tilbake...</a>
                 <br />
             </div>
         </article>
 
-        <footer>
-            <p class="footer">Copyright &copy;2016 OsloDev ASA. All rights reserved.</p>
-            <p class="footer">Created by OsloDev ASA.</p>
+        <!-- Footer -->
+        <footer id="Download">
+            <p class="footer">Copyright &copy;2016</p>
+            <p class="footer">Adrian V. Håland, Amin Hassan, Eivind Solberg, Henrik F. Larsen, Martin Olsen, Odd M. Kveseth &amp; Tommy Pedersen</p>
+            <p class="footer">All rights reserved.</p>
         </footer>
     </div>
 </body>

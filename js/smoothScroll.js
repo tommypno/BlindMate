@@ -1,4 +1,5 @@
-﻿function currentYPosition() {
+﻿// Javascript from: http://web.archive.org/web/20140213105950/http://itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
+function currentYPosition() {
     // Firefox, Chrome, Opera, Safari
     if (self.pageYOffset) return self.pageYOffset;
     // Internet Explorer 6 - standards mode

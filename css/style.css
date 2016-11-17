@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    background-image: url("../img/train.jpg");
+    background-image: url("../img/TogHD.jpg");
     min-height: 100vh;
     background-attachment: fixed;
     background-color: transparent;
@@ -294,14 +294,14 @@ p.footer {
 
 @media only screen and (min-width: 150px) and (max-width: 750px) {
     header {
-        background-image: url("../img/train.jpg");
+        background-image: url("../img/Tog.jpg");
         height: 100%;
         width: 100%;
         background-size: cover;
         background-attachment: scroll;
         background-position: center center;
         background-repeat: no-repeat;
-        background-color: transparent;
+        background-color: none;
     }
     #Header-container {
         top: 100px;

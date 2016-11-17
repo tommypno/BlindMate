@@ -7,6 +7,7 @@
     <link type="text/css" rel="stylesheet" href="css/style.css" />
     <link rel="icon" type="image/png" href="favicon.png">
     <title>BlindMate (English)</title>
+    <script src="js/smoothScroll.js"></script>
 </head>
 <body>
 
@@ -16,11 +17,11 @@
             <ul class="nav">
                 <li class="link"><a class="main" href="#">Menu</a>
                     <ul class="sub">
-                        <li><a href="#Home" tabindex="0">Home</a></li>
-                        <li><a href="#About">BlindMate</a></li>
-                        <li><a href="#Problem">Problem</a></li>
-                        <li><a href="#Features">Features</a></li>
-                        <li><a href="#Download">Download</a></li>
+                        <li><a href="#Home" tabindex="0" onclick="smoothScroll('Home'); return false">Home</a></li>
+                        <li><a href="#About" onclick="smoothScroll('About'); return false">BlindMate</a></li>
+                        <li><a href="#Problem" onclick="smoothScroll('Problem'); return false">Problem</a></li>
+                        <li><a href="#Features" onclick="smoothScroll('Features'); return false">Features</a></li>
+                        <li><a href="#Download" onclick="smoothScroll('Download'); return false">Download</a></li>
                     </ul>
                 </li>
             </ul>
@@ -35,7 +36,7 @@
                 <h2 id="h2header">Your best travel partner!</h2>
             </div>
             <img class="smartphone" src="img/smartphone/blindmate.png" alt="BlindMate" />
-            <a href="#About"><img src="img/arrow.png" id="arrow-down" alt="Scroll down" /></a>
+            <a href="#About" onclick="smoothScroll('About'); return false"><img src="img/arrow.png" id="arrow-down" alt="Scroll down" /></a>
         </header>
 
         <!-- Main site -->

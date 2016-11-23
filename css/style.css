@@ -228,14 +228,14 @@ img.smartphone {
     display: block;
 }
 
-.Features-more {
+.features-more {
     height: auto;
     padding: 2%;
     position: relative;
     text-align: center;
 }
 
-.Features-left {
+.features-left {
     width: 45%;
     height: auto;
     padding: 2%;
@@ -244,7 +244,7 @@ img.smartphone {
     text-align: center;
 }
 
-.Features-right {
+.features-right {
     width: 45%;
     height: auto;
     padding: 2%;
@@ -265,6 +265,12 @@ img.smartphone {
 }
 
 .feature-p {
+    font-weight: normal;
+    font-size: 1em;
+    text-align: left;
+}
+
+a.features-link {
     font-weight: normal;
     font-size: 1em;
     text-align: left;
@@ -298,22 +304,18 @@ p.footer {
     color: white;
 }
 
-/* unvisited link */
 a.footerlink:link {
     color: white;
 }
 
-/* visited link */
 a.footerlink:visited {
     color: white;
 }
 
-/* mouse over link */
 a.footerlink:hover {
     color: white;
 }
 
-/* selected link */
 a.footerlink:active {
     color: white;
 }
@@ -431,10 +433,10 @@ a.footerlink:active {
         height: auto;
         padding: 7% 2%;
     }
-    .Features-left {
+    .features-left {
         width: 98%;
     }
-    .Features-right {
+    .features-right {
         width: 98%;
     }
     .flag {

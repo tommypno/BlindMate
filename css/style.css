@@ -14,7 +14,7 @@ html, body {
 }
 
 header {
-    background-image: url("../img/TogHD.jpg");
+    background-image: url("http://student.cs.hioa.no/~s306650/FinalAssignment/img/train-desktop.jpg");
     min-height: 100vh;
     background-attachment: fixed;
     background-color: transparent;
@@ -43,8 +43,8 @@ header.no-img {
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 30px Highlight;
-    border: 1px solid Highlight;
+    box-shadow: 0px 0px 30px white;
+    border: 1px solid white;
 }
 
 #h1header {
@@ -74,7 +74,7 @@ header.no-img {
 }
 
 .flag:hover {
-    box-shadow: 0px 0px 30px Highlight;
+    box-shadow: 0px 0px 30px white;
 }
 
 #norge-flag {
@@ -93,8 +93,8 @@ header.no-img {
     text-align: center;
     background-color: rgba(51, 51, 51, 0.9);
     border-radius: 100px;
-    box-shadow: 0px 0px 30px Highlight;
-    border: 1px solid Highlight;
+    box-shadow: 0px 0px 30px white;
+    border: 1px solid white;
     bottom: 1%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
@@ -198,7 +198,7 @@ ul a:focus {
     width: 76%;
     height: auto;
     padding: 4% 12%;
-    padding-bottom: 1%;
+    padding-top: 4%;
 }
 
 .grey {
@@ -208,16 +208,17 @@ ul a:focus {
     width: 76%;
     height: auto;
     padding: 4% 12%;
-    padding-bottom: 1%;
+    padding-top: 4%;
 }
 
 img.smartphone {
     float: right;
-    padding: 1%;
+    padding: 2%;
     margin: 0 auto;
     height: auto;
     width: 25%;
     max-width: 255px;
+    min-width: 200px;
 }
 
 .details, .show, .hide:target {
@@ -233,6 +234,7 @@ img.smartphone {
     padding: 2%;
     position: relative;
     text-align: center;
+    padding-bottom: 3%;
 }
 
 .features-left {
@@ -242,6 +244,7 @@ img.smartphone {
     float: left;
     position: relative;
     text-align: center;
+    padding-top: 1%;
 }
 
 .features-right {
@@ -251,6 +254,7 @@ img.smartphone {
     float: right;
     position: relative;
     text-align: center;
+    padding-top: 1%;
 }
 
 .feature-heading {
@@ -277,7 +281,8 @@ a.features-link {
 }
 
 .download-logo {
-    width: 40%;
+    max-width: 400px;
+    min-width: 300px;
     margin: 0 auto;
     height: auto;
 }
@@ -320,9 +325,67 @@ a.footerlink:active {
     color: white;
 }
 
+#link-long {
+    display: inherit;
+}
+
+#link-short {
+    display: none;
+}
+
+/** Navbar mobil **/
+
+#navigation {
+    display: inherit;
+}
+
+#nav {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: auto;
+    background-color: rgba(51, 51, 51, 0.9);
+    box-shadow: 0 3px 2px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+        
+#nav > a {
+    display: none;
+}
+        
+#nav li a {
+    color: #fff;
+    display: inline-block;
+    background-color: rgba(51, 51, 51, 0.9);
+    float: left;
+    width: 100%;
+}
+        
+#nav > ul > li > a {
+    height: 100%;
+    font-size: 1.25em;
+    text-align: left;
+}
+
+#nav > ul > li:hover > a,
+#nav > ul:not( :hover ) > li.active > a {
+    background-color: white;
+    color: black;
+}
+/** Navbar mobil **/
+
+@media only screen and (max-width: 950px) {
+    #link-long {
+        display: none;
+    }
+    #link-short {
+        display: inherit;
+    }
+}
+
 @media only screen and (min-width: 150px) and (max-width: 750px) {
     header {
-        background-image: url("../img/Tog.jpg");
+        background-image: url("http://student.cs.hioa.no/~s306650/FinalAssignment/img/train-mobil.jpg");
         height: 100%;
         width: 100%;
         background-size: cover;
@@ -334,7 +397,7 @@ a.footerlink:active {
     #Header-container {
         top: 100px;
         padding: 10px;
-        width: 90%;
+        width: 60%;
     }
     #h1header {
         font-size: 3em;
@@ -424,6 +487,8 @@ a.footerlink:active {
         width: 96%;
         height: auto;
         padding: 7% 2%;
+        padding-top: 10%;
+        padding-bottom: 5%;
     }
     .grey {
         background-color: #f2f2f2;
@@ -432,6 +497,11 @@ a.footerlink:active {
         width: 96%;
         height: auto;
         padding: 7% 2%;
+        padding-top: 10%;
+        padding-bottom: 5%;
+    }
+    .feature-logo {
+        padding-top: 5%;
     }
     .features-left {
         width: 98%;
@@ -464,19 +534,81 @@ a.footerlink:active {
 }
 
 @media only screen and (max-width:640px) {
-        #h1header {
+    #Header-container {
+        width: 60%;
+    }
+    #h1header {
         font-size: 2.7em;
     }
-        #h2header {
+    #h2header {
         font-size: 1.2em;
     }
 }
 
 @media screen and (max-width:520px) {
-        #h1header {
+    #Header-container {
+        width: 60%;
+    }
+    #h1header {
         font-size: 2.1em;
     }
-        #h2header {
+     #h2header {
         font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+    /* CSS overrides for mobile here */
+    #Header-container {
+        width: 75%;
+    }
+
+    #navigation {
+        display: none;
+    }
+
+    #nav {
+        display: inherit;
+    }
+
+    #nav > a {
+        width: 2.5em;
+        height: 2.5em;
+        text-align: left;
+        text-indent: -9999px;
+        position: relative;
+    }
+             
+    #nav > a:before,
+    #nav > a:after {
+        position: absolute;
+        border: 2px solid #fff;
+        top: 35%;
+        left: 25%;
+        right: 25%;
+        content: '';
+    }
+             
+    #nav > a:after {
+        top: 60%;
+    }
+              
+    #nav:not( :target ) > a:first-of-type,
+    #nav:target > a:last-of-type {
+        display: block;
+    }
+              
+    #nav > ul {
+        height: auto;
+        display: none;
+        position: absolute;
+    }
+              
+    #nav:target > ul {
+        display: block;
+    }
+              
+    #nav > ul > li {
+        width: 100%;
     }
 }

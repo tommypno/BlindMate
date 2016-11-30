@@ -1,5 +1,7 @@
 // Javascript from: http://web.archive.org/web/20140213105950/http://itnewb.com/tutorial/Creating-the-Smooth-Scroll-Effect-with-JavaScript
 
+// The script was modefied to fit our page, and it was cleared with Anthony (by mail) that this is ok.
+
 // Determining the point on the Y Axis at which the scrolling has to start (starting coordinate) is the first thing we need to do. The point we want is the visible top of page coordinate, which takes into account any scrolling the user has done. We can then use this number, accompanied with the destination coordinate covered below to determine the distance between the starting and stopping points. This difference is then used to determine the scroll speed and perform the actual scrolling, whether scrolling up or down.
 
 function currentYPosition() {
